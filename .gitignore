@@ -1,0 +1,11 @@
+# nextjs build
+.next/
+
+# node modules
+node_modules/
+
+# environment variables
+.env.local
+
+#yarn file
+yarn.lock
