@@ -1,0 +1,39 @@
+.container{
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+/* index page css */
+
+.btn-index {
+  margin-top: 10rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: solid 1.5px;
+  margin-right: 1rem;
+  transition: all 0.1s;
+}
+
+.btn-index:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px #00000094;
+}
+
+/* profile page css */
+
+.btn-profile {
+  margin-top: 5rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: solid 1.5px;
+  margin-right: 1rem;
+  transition: all 0.1s;
+}
+
+.btn-profile:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px #00000094;
+}

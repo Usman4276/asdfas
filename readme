@@ -1,0 +1,1 @@
+mongo-db-link= mongodb+srv://testing:<password>@testing.igyiw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
