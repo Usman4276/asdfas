@@ -1,39 +1,80 @@
-.container{
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
 
 /* index page css */
 
-.btn-index {
-  margin-top: 10rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  font-family: "Open Sans", sans-serif;
+  color: #282828;
+}
+
+.btn {
   width: 5rem;
   height: 2rem;
   border-radius: 10px;
-  border: solid 1.5px;
-  margin-right: 1rem;
-  transition: all 0.1s;
+  border: solid 1.5px #00000014;
+  transition: all 0.2s;
+  color: #000000ab;
 }
 
-.btn-index:hover {
-  cursor: pointer;
-  box-shadow: 1px 1px 3px 1px #00000094;
-}
-
-/* profile page css */
-
-.btn-profile {
-  margin-top: 5rem;
+.btn-products {
+  color: #000000ab;
   width: 5rem;
   height: 2rem;
   border-radius: 10px;
-  border: solid 1.5px;
-  margin-right: 1rem;
-  transition: all 0.1s;
+  border: solid 1.5px #00000014;
+  margin-left: 1rem;
+  transition: all 0.2s;
 }
 
-.btn-profile:hover {
+.btn:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 3px 1px #00000094;
+  box-shadow: 0px 2px 6px 2px #0000002b;
+}
+
+.btn-products:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 6px 2px #0000002b;
+}
+
+.log-status {
+  position: relative;
+  left: 42%;
+  top: -46%;
+}
+
+.div-container {
+  height: 26rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  border: solid #8b8a8a17;
+  width: 23rem;
+  text-align: center;
+  padding: 11px 0px 5px 9px;
+  border-radius: 12px;
+  box-shadow: 4px 6px 8px 1px #28282882;
+}
+
+.table-heading {
+  background-color: gray;
+  color: white;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  height:26rem;
+  align-items: center;
 }

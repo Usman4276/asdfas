@@ -1,37 +1,35 @@
 import { useUser } from "@auth0/nextjs-auth0";
 
-
-function HomePage() {
+export default function HomePage() {
   const { user } = useUser();
 
-  for (const key in user) {
-    if (user.email_verified === true) {
-      return (
-        <>
-          <div className="container">
-            <h1>Auth0 Authentication</h1>
-            <a href="http://localhost:3000/api/auth/login">
-              <button className="btn-index" >Login</button>
-            </a>
-            <a href="http://localhost:3000/profile">
-              <button className="btn-index" >Profile</button>
-            </a>
-          </div>
-        </>
-      );
-    }
+  if (!user) {
+    return (
+      <>
+        <div className="container">
+          <h1>Auth0</h1>
+          <h4 className="log-status">Logged out 🔴</h4>
+          <a href="/api/auth/login">
+            <button className="btn">Login</button>
+          </a>
+        </div>
+      </>
+    );
   }
-
   return (
     <>
       <div className="container">
-        <h1>Auth0 Authentication</h1>
-        <a href="http://localhost:3000/api/auth/login">
-          <button className="btn-profile">Login</button>
-        </a>
+        <h1>Auth0 </h1>
+        <h4 className="log-status">Logged in 🟢</h4>
+        <div>
+          <a href="/api/auth/logout">
+            <button className="btn">Logout</button>
+          </a>
+          <a href="/products">
+            <button className="btn-products">Products</button>
+          </a>
+        </div>
       </div>
     </>
   );
 }
-
-export default HomePage;
